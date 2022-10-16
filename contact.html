@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Contact Me</title>
+    <style>
+        body {
+            background-size: cover;
+            background-color: rgb(5, 5, 5);
+        }
+        
+        .bd1 {
+            text-align: center;
+            color: cyan;
+        }
+        
+        .container {
+            text-align: center;
+            border: 10px double;
+            border-radius: 50px;
+            margin-top: 100px;
+            padding: 20px;
+            width: 700px;
+            font-size: xx-large;
+            border-color: rgb(53, 230, 26);
+            color: rgb(229, 235, 36);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        .container input {
+            text-align: center;
+            font-size: x-large;
+            width: 400px;
+        }
+        
+        .bd5 {
+            margin-left: 400px;
+            margin-top: 200px;
+            color: crimson;
+        }
+        
+        .bd10,
+        .bd13,
+        .bd14,
+        .bd15,
+        .bd16 {
+            margin-left: 80px;
+            align-items: center;
+            font-size: 500%;
+            justify-content: center;
+        }
+        
+        .container4 {
+            display: flex;
+            /* align-items: center; */
+            margin-left: 500px;
+            margin-top: 20px;
+            color: brown;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/247028d7f5.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">VAISHNAV</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="project.html">Project</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Courses
+                    </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li>--Courses where i studied</li>
+                            <hr>
+                            <li><a class="dropdown-item" href="https://www.w3schools.com/c/">C</a></li>
+                            <li><a class="dropdown-item" href="https://www.w3schools.com/cpp/default.asp">C++</a></li>
+                            <li><a class="dropdown-item" href="https://www.w3schools.com/python/default.asp">PYTHON</a></li>
+                            <li><a class="dropdown-item" href="https://www.w3schools.com/java/default.asp">JAVA</a></li>
+                            <li><a class="dropdown-item" href="https://www.w3schools.com/html/default.asp">HTML</a></li>
+                            <li><a class="dropdown-item" href="https://www.w3schools.com/css/default.asp">CSS</a></li>
+                            <li><a class="dropdown-item" href="https://www.w3schools.com/js/default.asp">JAVASCRIPT</a></li>
+                            <li><a class="dropdown-item" href="https://www.w3schools.com/sql/default.asp">SQL</a></li>
+                            <li><a class="dropdown-item" href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp">BOOTSTRAP</a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">More Getting Updated..</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bootcamp.html">Bootcamps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact me</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bd1">
+        <h1>Contact Me ---></h1>
+    </div>
+
+    <div class="container">
+        <form name="myForm" onsubmit="return validateForm()" method="post">
+
+            <div class="formdesign" id="name">
+                NAME:: <input type="text" name="fname">
+            </div>
+            <br>
+            <div class="formdesign" id="email">
+                EMAIL:: <input type="email" name="femail">
+            </div>
+            <br>
+            <div class="formdesign" id="phone">
+                PHONE:: <input type="phone" name="fphone">
+            </div>
+            <br>
+            <div class="formdesign" id="conc">
+                CONCERN:: <input type="Concern" name="fcon">
+            </div>
+            <br>
+
+
+            <input type="submit" value="SUBMIT">
+        </form>
+    </div>
+
+
+    <script>
+        function validateForm() {
+            var na = document.forms['myForm']['fname'].value;
+            if (na.length < 5) {
+                alert("Enter Your Full name !")
+
+            }
+        }
+
+        function ValidateForm(inputText) {
+            var mailformat = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/;
+            if (inputText.value.match(mailformat)) {
+                alert("Valid email address!");
+
+            } else {
+                alert("You have entered an invalid email address!");
+
+            }
+        }
+
+        // function validateForm(inputtxt) {
+        //     var phoneno = /^\d{10}$/;
+        //     if ((inputtxt.value.match(phoneno))) {
+        //         return true;
+        //     } else {
+        //         alert("message");
+        //         return false;
+        //     }
+        // }
+    </script>
+
+
+    <div class="bd5">
+        <h1><i>: Connect Me Social Apps :</i></h1>
+    </div><br>
+
+    <div class="container4">
+
+        <div class="bd10">
+            <a href="https://www.facebook.com/vaishnav.chaudhari.102" style="color:blue ;">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+        </div>
+        <div class="bd13">
+            <a href="https://www.instagram.com/chaudhari_vaishnav/?igshid=YmMyMTA2M2Y%3D" style="color:red ;">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+        <div class="bd14">
+            <a href=" https://twitter.com/Vaishna32622114?t=EtivhCznO0FfTwrtcL3jIQ&s=08" style="color:mediumblue ;">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+        </div>
+        <div class="bd15">
+            <a href="https://www.linkedin.com/in/vaishnav-chaudhari-a128b01a5">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+        </div>
+        <!-- <div class="bd16">
+            <a href="" style="color:green ;">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+        </div> -->
+    </div>
+    <hr>
+    <center>
+        <div class="bd6" style="color: white ;">
+
+            <h4>copyright 2022 &COPY; vaishnav chaudhari</h4>
+        </div>
+    </center>
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
